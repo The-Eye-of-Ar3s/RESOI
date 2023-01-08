@@ -10,6 +10,12 @@ An interpreter written in rust to support a bunch of esolangs
 - leave space for readability
 - comment everything
 
+## Language Status
+
+|Language|Interpreter|Compiler|
+|:-:|:-:|:-:|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:white_check_mark:|:construction:|
+
 ## Exit codes
 
 |Exit Code|Language|Message|Subcategory|
@@ -18,11 +24,4 @@ An interpreter written in rust to support a bunch of esolangs
 |1|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|RANGE ERROR||
 |2|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|MISMATCHED LOOP|Loop end before loop start|
 |3|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|MISMATCHED LOOP|Unclosed loop starts|
-|-2|ALL|ERROR READING FILE|
 |-1|ALL|NOT IMPLEMENTED ERROR|
-
-## Language Status
-
-|Language|Status|
-|:-:|:-:|
-|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|WIP|
