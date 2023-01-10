@@ -2,13 +2,14 @@
 
 An interpreter written in rust to support a bunch of esolangs
 
-## Code Conventions
+## Symbol Meaning
 
-- Variable names should not be abbreviated and be as descriptive as realistically possible;
-- snake_case should be used;
-- Commands should be ended with a ";" even if not necessary
-- leave space for readability
-- comment everything
+|Symbol|Meaning|
+|:-:|:-:|
+|:x:|Not Implemented, Not Planned|
+|:construction:|Work in Progress|
+|:white_check_mark:|Completed|
+|:negative_squared_cross_mark:|Outdated|
 
 ## Language Status
 
