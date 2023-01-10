@@ -37,10 +37,7 @@ An interpreter written in rust to support a bunch of esolangs
 
 ## Todo
 
-### Brainfuck
-
-- Optimize instruction_vector before interpretation
-
-### AmBored--
-
-- Optimize instruction_vector before interpretation
+|Language|Status|Description|
+|:-:|:-:|:-:|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:construction:|Optimize instruction_vector before interpretation|
+|[AmBored--](https://esolangs.org/wiki/AmBored--)|:construction:|Optimize instruction_vector before interpretation|
