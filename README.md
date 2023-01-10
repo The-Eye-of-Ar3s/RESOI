@@ -12,9 +12,9 @@ An interpreter written in rust to support a bunch of esolangs
 
 ## Language Status
 
-|Language|Interpreter|Compiler|
-|:-:|:-:|:-:|
-|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:white_check_mark:|:construction:|
+|Language|Interpreter|
+|:-:|:-:|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:white_check_mark:|
 
 ## Exit codes
 

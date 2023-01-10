@@ -47,7 +47,7 @@ pub fn run(code: String) {
                     stack_pointer -= 1;
                 } else {
                     // if the program attempts to index a memory address below 0 raise a range error
-                    println!("{}", Colour::Red.paint("RANGE ERROR"));
+                    eprintln!("{}", Colour::Red.paint("RANGE ERROR"));
                     exit(1);
                 };
             }
@@ -108,7 +108,7 @@ fn generate_loop_map(instruction_vector: Vec<String>) -> HashMap<usize, usize>{
             // If the command is a loop end make sure there is a corresponding loop start if not raise an error then append both ( loop_start_index: loop_end_index ) and ( loop_end_index: loop_start_index ) then remove the last element of open_vector
             match open_vector.last() {
                 None => {
-                    println!("{}", Colour::Red.paint("MISMATCHED LOOPS"));
+                    eprintln!("{}", Colour::Red.paint("MISMATCHED LOOPS"));
                     exit(2);
                 }
                 Some(v) => {
@@ -124,7 +124,7 @@ fn generate_loop_map(instruction_vector: Vec<String>) -> HashMap<usize, usize>{
     }
     // If there is an unclosed loop start raise an error
     if open_vector.len() != 0 {
-        println!("{}", Colour::Red.paint("MISMATCHED LOOPS"));
+        eprintln!("{}", Colour::Red.paint("MISMATCHED LOOPS"));
         exit(3);
     }
     return return_map;
