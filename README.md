@@ -19,6 +19,7 @@ An interpreter written in rust to support a bunch of esolangs
 |:-:|:-:|
 |[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:white_check_mark:|
 |[AmBored--](https://esolangs.org/wiki/AmBored--)|:white_check_mark:|
+|[4DChess](https://esolangs.org/wiki/4DChess)|:white_check_mark:|
 
 ## Exit codes
 
