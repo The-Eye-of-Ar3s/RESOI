@@ -1,4 +1,4 @@
-# Rusty Esopreter
+# Rusty Esolang Interpreter
 
 An interpreter written in rust to support a bunch of esolangs
 
@@ -38,5 +38,9 @@ An interpreter written in rust to support a bunch of esolangs
 ## Todo
 
 ### Brainfuck
+
+- Optimize instruction_vector before interpretation
+
+### AmBored--
 
 - Optimize instruction_vector before interpretation
