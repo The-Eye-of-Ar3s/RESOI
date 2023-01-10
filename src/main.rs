@@ -23,11 +23,11 @@ struct Opt { // Triple commented out lines are descriptors for the help menu
     #[structopt(short, long)] // short means the flag can be abbreviated, long means the long version still works
     lang: String,
 
-    // Weather to transpile or interpret the file
+    /// Whether  to transpile or interpret the file
     #[structopt(short, long)]
     transpile: Option<bool>,
 
-    // Output file
+    /// Output file
     #[structopt(short, long, parse(from_os_str))]
     outfile: Option<PathBuf>
 }
