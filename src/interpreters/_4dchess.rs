@@ -178,7 +178,7 @@ fn generate_loop_map(instruction_vector: Vec<String>) -> HashMap<usize, usize>{
             match open_vector.last() {
                 None => {
                     eprintln!("{}", Colour::Red.paint("MISMATCHED LOOPS"));
-                    exit(2);
+                    exit(13);
                 }
                 Some(v) => {
                     value1 = v.clone();
@@ -194,7 +194,7 @@ fn generate_loop_map(instruction_vector: Vec<String>) -> HashMap<usize, usize>{
     // If there is an unclosed loop start raise an error
     if open_vector.len() != 0 {
         eprintln!("{}", Colour::Red.paint("MISMATCHED LOOPS"));
-        exit(3);
+        exit(14);
     }
     return return_map;
 }
