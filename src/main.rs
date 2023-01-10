@@ -39,6 +39,18 @@ fn main() {
             };
             interpreters::brainfuck::run(content); // Hand over code in string form to the interpreter
         }
+        "ambored++" => {
+            let content = match fs::read_to_string(opt.file) { // Read content to file or exit with appropriate code ( see README.md ) on error.
+                Err(_) => {
+                    eprintln!("{}", Colour::Red.paint("Error reading file"));
+                    exit(-2);
+                }
+                Ok(c) => {
+                    c
+                }
+            };
+            interpreters::am_bored_mm::run(content); // Hand over code in string form to the interpreter
+        }
         _ => {
             eprintln!("Language not recognized");
             exit(0);
