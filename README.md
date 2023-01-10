@@ -42,11 +42,16 @@ An interpreter written in rust to support a bunch of esolangs
 |14|[4DChess](https://esolangs.org/wiki/4DChess)|UNDERFLOW ERROR||
 |13|[4DChess](https://esolangs.org/wiki/4DChess)|MISMATCHED LOOP|Loop end before loop start|
 |14|[4DChess](https://esolangs.org/wiki/4DChess)|MISMATCHED LOOP|Unclosed loop starts|
+|-4|ALL|ERROR WRITING ZIPFILE| ERROR FINISHING FILE|
+|-4|ALL|ERROR WRITING ZIPFILE| ERROR WRITING FILE|
+|-3|ALL|ERROR WRITING ZIPFILE| ERROR INSERTING FILE|
+|-2|ALL|ERROR WRITING ZIPFILE| ERROR INSERTING DIRECTORY|
 |-1|ALL|NOT IMPLEMENTED ERROR|
 
 ## Todo
 
-|Language|Status|Description|
-|:-:|:-:|:-:|
-|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:construction:|Optimize instruction_vector before interpretation|
-|[AmBored--](https://esolangs.org/wiki/AmBored--)|:construction:|Optimize instruction_vector before interpretation|
+|Language|Type|Status|Description|
+|:-:|:-:|:-:|:-:|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|Interpreted|:x:|Optimize instructions and remove redundancies|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|Compiled|:x:|Optimize instructions and remove redundancies|
+|[AmBored--](https://esolangs.org/wiki/AmBored--)|Interpreted|:x:|Optimize instructions and remove redundancies|

@@ -10,6 +10,7 @@ structopt = "0.3.26"
 ansi_term = "0.12.1"
 sdl2 = "0.35.2"
 bit = "0.1.1"
+zip = "0.6.3"
 
 [profile.release]
 opt-level = 3
