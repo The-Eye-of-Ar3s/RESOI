@@ -15,11 +15,12 @@ An interpreter written in rust to support a bunch of esolangs
 
 ## Language Status
 
-|Language|Interpreter|
-|:-:|:-:|
-|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:white_check_mark:|
-|[AmBored--](https://esolangs.org/wiki/AmBored--)|:white_check_mark:|
-|[4DChess](https://esolangs.org/wiki/4DChess)|:white_check_mark:|
+|Language|Interpreter|Transpiler|
+|:-:|:-:|:-:|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|:white_check_mark:|:white_check_mark:|
+|[AmBored--](https://esolangs.org/wiki/AmBored--)|:white_check_mark:|:construction:|
+|[4DChess](https://esolangs.org/wiki/4DChess)|:white_check_mark:|:construction:|
+|[4DChess](https://esolangs.org/wiki/4DChess)|:white_check_mark:|:construction:|
 
 ## Exit codes
 
@@ -42,7 +43,10 @@ An interpreter written in rust to support a bunch of esolangs
 |14|[4DChess](https://esolangs.org/wiki/4DChess)|UNDERFLOW ERROR||
 |13|[4DChess](https://esolangs.org/wiki/4DChess)|MISMATCHED LOOP|Loop end before loop start|
 |14|[4DChess](https://esolangs.org/wiki/4DChess)|MISMATCHED LOOP|Unclosed loop starts|
-|-4|ALL|ERROR WRITING ZIPFILE| ERROR FINISHING FILE|
+|15|[Boolfuck](https://esolangs.org/wiki/Boolfuck)|RANGE ERROR||
+|16|[4DChess](https://esolangs.org/wiki/4DChess)|MISMATCHED LOOP|Loop end before loop start|
+|17|[4DChess](https://esolangs.org/wiki/4DChess)|MISMATCHED LOOP|Unclosed loop starts|
+|-5|ALL|ERROR WRITING ZIPFILE| ERROR FINISHING FILE|
 |-4|ALL|ERROR WRITING ZIPFILE| ERROR WRITING FILE|
 |-3|ALL|ERROR WRITING ZIPFILE| ERROR INSERTING FILE|
 |-2|ALL|ERROR WRITING ZIPFILE| ERROR INSERTING DIRECTORY|
@@ -52,6 +56,6 @@ An interpreter written in rust to support a bunch of esolangs
 
 |Language|Type|Status|Description|
 |:-:|:-:|:-:|:-:|
-|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|Interpreted|:x:|Optimize instructions and remove redundancies|
-|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|Compiled|:x:|Optimize instructions and remove redundancies|
-|[AmBored--](https://esolangs.org/wiki/AmBored--)|Interpreted|:x:|Optimize instructions and remove redundancies|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|Interpreted|:construction:|Optimize instructions and remove redundancies|
+|[Brainfuck](https://esolangs.org/wiki/Brainfuck)|Compiled|:construction:|Optimize instructions and remove redundancies|
+|[AmBored--](https://esolangs.org/wiki/AmBored--)|Interpreted|:construction:|Optimize instructions and remove redundancies|
